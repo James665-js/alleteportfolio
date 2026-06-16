@@ -89,7 +89,7 @@ def main(page: ft.Page):
                 controls=[
                     ft.Container(
                         content=ft.Image(
-                            src="zera.JPG",  
+                            src="/zera.JPG",  
                             fit=ft.ImageFit.CONTAIN,
                             border_radius=12,
                         ),
@@ -100,7 +100,7 @@ def main(page: ft.Page):
                     ft.Container(height=10),
                     ft.Video(
                         expand=False,
-                        playlist=[ft.VideoMedia("alleta.mp4")], 
+                        playlist=[ft.VideoMedia("/alleta.mp4")], 
                         playlist_mode=ft.PlaylistMode.LOOP,
                         fill_color=ft.colors.BLACK,
                         aspect_ratio=16/9,
@@ -246,7 +246,7 @@ def main(page: ft.Page):
             ft.Text("Latest snapshot of the active GitHub ecosystem branch:", style=ft.TextThemeStyle.BODY_MEDIUM),
             ft.Container(height=10),
             ft.Image(
-                src="commit_history.png",  
+                src="/commit_history.png",  
                 fit=ft.ImageFit.CONTAIN,
                 border_radius=8,
             )
