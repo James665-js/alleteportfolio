@@ -33,7 +33,8 @@ jobs:
       - name: Upload web assets
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/
+          # Updated to look inside the subfolder where Flet output the files
+          path: 12My_Portfolio/dist/
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
