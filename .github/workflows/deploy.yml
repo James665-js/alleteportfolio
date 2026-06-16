@@ -28,8 +28,7 @@ jobs:
 
       - name: Build Flet Web App
         run: |
-          # Flet compiles tuni.py into static HTML/JS inside a 'dist' folder
-          flet publish tuni.py --base-url /alleteportfolio/
+          flet publish 12My_Portfolio/tuni.py --base-url /alleteportfolio/
 
       - name: Upload web assets
         uses: actions/upload-pages-artifact@v3
